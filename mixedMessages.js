@@ -21,8 +21,7 @@ const frasesOrvananos = [
 function selectPhrase(f) {
 	//random es un número aleatorio entre 0 y la longitud de frasesOrvananos
 	let random = Math.floor(Math.random() * parseInt(f.length));
-	let frase = f[random];
-	return frase;
+	return f[random];
 }
 
 console.log("Sí. Es cierto. Alguna vez Raúl Orvañanos dijo esto en TV Nacional:")
