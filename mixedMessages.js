@@ -26,22 +26,44 @@ const frases = [
 	"le va a pegar... le va a PEGAR..... LE VA A PEGAAAARRRR.......... F U E R A !!!!!",
 	"Y allá van los grandotes",
 	"Cabeceó de cabeza!",
-	"Uy, Uy, UUUUUYYY!!!!"
+	"Uy, Uy, UUUUUYYY!!!!",
+	"En el día del padre, México le dió en la madre a Alemania",
+	"Tantas veces te pedí una, desgraciado!",
+	"¡Oribe para Presidente de la ONU!",
+	"No fue penalty por que el árbitro no lo marcó",
+	"La portería mide lo mismo en México y Europa",
+	"La cutó juera",
+	"Si la pelota entra, es gol",
+	"En las eliminatorias de hoy pasan 14 de 6",
+	"Sí era fuera de lugar por que lo marcó el árbitro",
+	"Soy guerrero. Perdón, soy de Guerrero!",
+	"El portero debe estar atrás de sus defensas",
+	"He vomitado bilis por ti",
+	"La sacó a Tamaulipas!",
+	"Al rinconcito, papá",
+	"Donde las arañas tejen su nido",
+	"Uf, Uf, y recontra -uf",
+	"Le tiró la torta de milanesa a un brother",
+	"Fírmala! Fírmala! F I R M A L AAAA!!"
 		];	
 
-function selectAdj(a) {
-	//random es un número aleatorio entre 0 y la longitud de un arreglo de adjetivos
-	let randomAdj = Math.floor(Math.random() * parseInt(a.length));
-	return a[randomAdj];
+
+//Arreglo de Cronistas Deportivos
+const personas = [
+	"Raúl Orvañanos",
+	"Jorge Campos",
+	"Christian Martinoli",
+	"El Perro Bermudez"
+		];	
+
+
+function selectItem(a) {
+	//random es un número aleatorio entre 0 y la longitud de un arreglo
+	let random = Math.floor(Math.random() * parseInt(a.length));
+	return a[random];
 }
 
-function selectPhrase(f) {
-	//random es un número aleatorio entre 0 y la longitud de un arreglo de frases
-	let randomPhrase = Math.floor(Math.random() * parseInt(f.length));
-	return f[randomPhrase];
-}
 
-let selectedAdj = selectAdj(adj);
-
-console.log(`Sí. Es cierto. Alguna vez algún ${selectedAdj} dijo esto en cadena Nacional:`)
-console.log(selectPhrase(frases));
+console.log(`Sí. Es cierto. Alguna vez algún ${selectItem(adj)} dijo esto en cadena Nacional:`)
+console.log(selectItem(frases));
+console.log(`Habrá sido ${selectItem(personas)}?`)
