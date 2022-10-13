@@ -21,7 +21,7 @@ const frases = [
 	"Si tienes el balón, el rival no lo tiene",
 	"Nooo, bueno!",
 	"Ojo! Si le sacan roja, se tiene que ir!",
-	"Me parece fuera de lugar... ¡Quitenle el 'parece'. ¡Es fuera de lugar!",
+	"Me parece fuera de lugar... ¡Quitenle el 'parece'! ¡Es fuera de lugar!",
 	"No puedes hablar bien de alguien porque a la siguiente jugada se equivoca.",
 	"le va a pegar... le va a PEGAR..... LE VA A PEGAAAARRRR.......... F U E R A !!!!!",
 	"Y allá van los grandotes",
