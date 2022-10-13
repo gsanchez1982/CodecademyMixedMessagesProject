@@ -1,5 +1,16 @@
-//Arreglo de Frases de Raul Orvañanos
-const frasesOrvananos = [
+//Arreglo de Adjetivos
+const adj = [
+	"cronista deportivo",
+	"comentarista",
+	"narrador",
+	"payaso",
+	"personaje de televisión",
+	"experto en deportes"
+	];
+
+
+//Arreglo de Frases de Cronistas Deportivos
+const frases = [
 	"Si la mete es gol",
 	"Te dejo porque la tiene Boselli y es de peligro",
 	"Hay algo que está claro. Si Pumas no empata, va a perder este partido...",
@@ -18,11 +29,19 @@ const frasesOrvananos = [
 	"Uy, Uy, UUUUUYYY!!!!"
 		];	
 
-function selectPhrase(f) {
-	//random es un número aleatorio entre 0 y la longitud de frasesOrvananos
-	let random = Math.floor(Math.random() * parseInt(f.length));
-	return f[random];
+function selectAdj(a) {
+	//random es un número aleatorio entre 0 y la longitud de un arreglo de adjetivos
+	let randomAdj = Math.floor(Math.random() * parseInt(a.length));
+	return a[randomAdj];
 }
 
-console.log("Sí. Es cierto. Alguna vez Raúl Orvañanos dijo esto en TV Nacional:")
-console.log(selectPhrase(frasesOrvananos));
+function selectPhrase(f) {
+	//random es un número aleatorio entre 0 y la longitud de un arreglo de frases
+	let randomPhrase = Math.floor(Math.random() * parseInt(f.length));
+	return f[randomPhrase];
+}
+
+let selectedAdj = selectAdj(adj);
+
+console.log(`Sí. Es cierto. Alguna vez algún ${selectedAdj} dijo esto en cadena Nacional:`)
+console.log(selectPhrase(frases));
